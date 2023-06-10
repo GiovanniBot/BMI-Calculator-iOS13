@@ -36,6 +36,10 @@ class ViewController: UIViewController {
         
         let bmi = String(format: "%.1f", weight / (height * height))
         
-        print(bmi)
+        let secondVC = SecondViewController()
+        secondVC.bmiValue = bmi
+        
+        self.present(secondVC, animated: true)
+        
     }
 }
